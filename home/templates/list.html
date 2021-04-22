@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tema Rest Area</title> <!싸이트 이름>
+    <style>
+		table, th, td { border: 1px solid black }
+	</style>
+</head>
+
+<body>
+    <h2 style = "text-align:center"> <!페이지 제목 가운데 정렬 설정>
+        테마 휴게소 리스트
+    </h2>     <!h2 == 제목 크기 설정>
+
+    <table style = "width:100%"> 
+
+        <tr style="background-color:Bisque"> 
+            <th>휴게소 명</th> <!th == 테이블 요소 가운데 정렬 >
+            <th>특징</th>
+            <th>상세 설명</th>       
+        </tr>
+
+        {% for item in list %}
+    
+        <tr style="background-color:Cornsilk"> 
+            <th>{{item.stdRestNm}}</th> 
+            <th>{{item.itemNm}}</th> <!td == 테이블 요소 왼쪽 정렬 >
+            <td>{{item.detail}}</td>       
+        </tr>
+    
+        {% endfor %}
+    </table>
+</body>
+
+</html>   

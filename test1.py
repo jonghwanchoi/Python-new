@@ -20,12 +20,10 @@ print()
 
 r_dict = json.loads(response.text)
 r_list = r_dict.get("list")
-#r_unitNames = r_list.get("unitName")
-
 
 result = {}
 for item in r_list: 
-    print("[테마 휴게소] : "+ item.get("stdRestNm") + "\n[특징] : " + item.get("itemNm") + "\n[세부 설명] :\n" + item.get("detail")+"\n") # key value로 쌍으로 가져온다. 
+    print("[테마 휴게소] : " + item.get("stdRestNm") + "\n[특징] : " + item.get("itemNm") + "\n[세부 설명] :\n" + item.get("detail")+"\n")
     
         
 print("===== response dictionary(python object) data start =====")
