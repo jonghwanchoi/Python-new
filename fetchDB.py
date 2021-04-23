@@ -113,7 +113,7 @@ edtFrame.pack()
 listFrame = Frame(window)
 listFrame.pack(side = BOTTOM,fill=BOTH, expand=1)
 
-label1 = Label(edtFrame, text="id :", font=("돋음", 10)); label.pack(side = LEFT, padx = 10, pady = 10)
+label1 = Label(edtFrame, text="id :", font=("돋음", 10)); label1.pack(side = LEFT, padx = 10, pady = 10)
 edt1= Entry(edtFrame, width = 10); edt1.pack(side = LEFT, padx = 2, pady = 10)
 label2 = Label(edtFrame, text="이름 :", font=("돋음", 10)); label2.pack(side = LEFT, padx = 10, pady = 10)
 edt2= Entry(edtFrame, width = 10); edt2.pack(side = LEFT, padx = 2, pady = 10)
