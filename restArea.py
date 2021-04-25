@@ -5,3 +5,4 @@ class Rest:
         self.detail = detail
     def __str__(self):
         return f"stdRestNm : '{self.stdRestNm}' itemNm : '{self.itemNm}' detail : '{self.detail}'"
+

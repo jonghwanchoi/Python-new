@@ -2,7 +2,7 @@ from urllib.parse import urlencode, unquote
 import requests
 import json
 
-url = "http://data.ex.co.kr/openapi/restinfo/restThemeList"
+url = "http://data.ex.co.kr/openapi/restinfo/restThemeList" #나중에 만들 서버주소? 입력?
 queryString = "?" + urlencode(
     {
         "key" : "test",
